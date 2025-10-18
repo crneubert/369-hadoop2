@@ -1,0 +1,118 @@
+Carson Neubert -- CSC369 -- Lab 3
+
+
+1)
+
+
+Input:
+
+./gradlew run --args="CountryRequestCount input_users/hostname_country.csv input_access_log out_country_count"
+
+./gradlew run --args="SumCountry out_country_count out_country_sum"
+
+./gradlew run --args="AccessLog2 out_country_sum out_country_sorted"
+
+
+Output: (excerpt)
+
+Unknown Location	812
+Intranet	198
+Canada	127
+United States	87
+Robot	80
+Israel	19
+Australia	17
+France	16
+Wherever You Want to Ship	13
+Germany	13
+United Kingdom	6
+Korea	4
+Spain	4
+Denmark	4
+Netherlands	2
+Los Alamos	1
+Taiwan	1
+Finland	1
+Mexico	1
+
+
+
+2)
+
+
+Input:
+
+./gradlew run --args="URLCountryCount input_users/hostname_country.csv input_access_log raw_urlcountry"
+
+./gradlew run --args="SumCountry raw_urlcountry raw_urlcounts"
+
+./gradlew run --args="URLCountrySorter raw_urlcounts out_urlcountrysorted"
+
+
+Output: (excerpt)
+
+Australia 	/twiki/bin/view/Main/SpamAssassinDeleting	2
+Australia 	/mailman/listinfo	2
+Australia 	/twiki/bin/view/Main/SpamAssassinAndPostFix	2
+Australia 	/twiki/bin/view/Main/WebHome	1
+Australia 	/icons/gnu-head-tiny.jpg	1
+Australia 	/twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	1
+Australia 	/twiki/bin/view/Main/SpamAssassinTaggingOnly	1
+Australia 	/mailman/listinfo/cnc_notice	1
+Australia 	/mailman/listinfo/administration	1
+Australia 	/icons/PythonPowered.png	1
+Australia 	/mailman/admin/webct	1
+Australia 	/mailman/admin	1
+Australia 	/mailman	1
+Australia 	/icons/mailman.jpg	1
+Canada 	/mailman/listinfo/ppwc	9
+Canada 	/mailman/listinfo	6
+Canada 	/icons/PythonPowered.png	5
+Canada 	/icons/gnu-head-tiny.jpg	5
+Canada 	/icons/mailman.jpg	5
+Canada 	/ie.htm	5
+Canada 	/images/image004.jpg	5
+Canada 	/images/image005.jpg	5
+Canada 	/images/msgops.JPG	5
+Canada 	/	4
+
+
+
+3)
+
+
+Input:
+
+./gradlew run --args="URLCountryCount input_users/hostname_country.csv input_access_log raw_urlcountry"
+
+./gradlew run --args="SumCountry raw_urlcountry raw_urlcounts"
+
+./gradlew run --args="URLListCountry raw_urlcounts out_listurlcountry"
+
+
+Output: (excerpt)
+
+/antivirus.html	Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_0.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_0_err.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_1.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_1_err.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_2.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_2_err.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_3.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph.cgi/mailgraph_3_err.png	Canada , Intranet , Unknown Location
+/cgi-bin/mailgraph2.cgi	Canada , Intranet , Unknown Location
+/clients.html	Unknown Location
+/dccstats/	Unknown Location
+/dccstats/index.html	Canada , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-hashes.1month.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-hashes.1week.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-hashes.1year.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam-ratio.1day.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam-ratio.1month.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam-ratio.1week.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam-ratio.1year.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam.1day.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam.1month.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam.1week.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
+/dccstats/stats-spam.1year.png	Canada , Intranet , Israel , United States , Unknown Location , Wherever You Want to Ship
